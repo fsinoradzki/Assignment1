@@ -1,0 +1,26 @@
+# Starter pipeline
+- task: AzureFunctionApp@1
+  inputs:
+    azureSubscription: 'Azure subscription 1(da8917ad-67a2-4297-b2ae-712cf11ec381)'
+    appType: 'functionApp'
+    appName: 'Varonis Assignment 1'
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    deploymentMethod: 'auto'
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
