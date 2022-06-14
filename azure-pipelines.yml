@@ -1,15 +1,20 @@
+# Frank Sinoradzki
 # Starter pipeline
+# Takes a listed GitHub repository already synced with the Pipeline
+# And then uploads it as a function app onto Azure
 
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
+# Continuous integration triggers
 trigger:
 - main
 
+# Pool where the job will run
 pool:
   vmImage: ubuntu-latest
 
+# A list of steps this job will run
+steps:
+
+# Updates a function app with a PowerShell web application
 - task: AzureFunctionApp@1
   inputs:
     azureSubscription: 'Azure subscription 1(da8917ad-67a2-4297-b2ae-712cf11ec381)'
