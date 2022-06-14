@@ -25,10 +25,10 @@ steps:
     appType: 'functionApp'
     appName: 'VaronisAssignment1'
     inputs:
-    targetFolder: '$(Build.ArtifactStagingDirectory)' 
+      targetFolder: '$(Build.ArtifactStagingDirectory)' 
     deploymentMethod: 'auto'
 
 - task: PublishBuildArtifacts@1    
-displayName: 'Publish Artifact: drop'
-inputs:
+  displayName: 'Publish Artifact: drop'
+  inputs:
     PathtoPublish: '$(build.artifactstagingdirectory)'
