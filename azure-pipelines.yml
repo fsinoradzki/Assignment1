@@ -23,6 +23,6 @@ steps:
   inputs:
     azureSubscription: 'Azure subscription 1(da8917ad-67a2-4297-b2ae-712cf11ec381)'
     appType: 'functionApp'
-    appName: 'Varonis Assignment 1'
+    appName: 'VaronisAssignment1'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
