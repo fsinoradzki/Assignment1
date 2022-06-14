@@ -26,3 +26,5 @@ steps:
     appName: 'VaronisAssignment1'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
+
+- task: PublishBuildArtifacts@1
