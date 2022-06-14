@@ -24,11 +24,7 @@ steps:
     azureSubscription: 'Azure subscription 1(da8917ad-67a2-4297-b2ae-712cf11ec381)'
     appType: 'functionApp'
     appName: 'VaronisAssignment1'
-    inputs:
-    targetFolder: '$(Build.ArtifactStagingDirectory)' 
+    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
     deploymentMethod: 'auto'
 
 - task: PublishBuildArtifacts@1    
-  displayName: 'Publish Artifact: drop'
-  inputs:
-    PathtoPublish: '$(build.artifactstagingdirectory)'
