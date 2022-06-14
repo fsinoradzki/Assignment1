@@ -25,6 +25,4 @@ steps:
     appType: 'functionApp'
     appName: 'VaronisAssignment1'
     package: '$(System.DefaultWorkingDirectory)'
-    deploymentMethod: 'auto'
-
-- task: PublishBuildArtifacts@1    
+    deploymentMethod: 'auto'   
