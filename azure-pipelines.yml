@@ -10,6 +10,10 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
 - task: AzureFunctionApp@1
   inputs:
     azureSubscription: 'Azure subscription 1(da8917ad-67a2-4297-b2ae-712cf11ec381)'
